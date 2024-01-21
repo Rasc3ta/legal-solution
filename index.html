@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Justice</title>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- daisy + tailwind setup  -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- config  -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              text_color: "#707070",
+              primary: '#B68C5A',
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- custom style -->
+    <style>
+      .headings {
+        font-family: "EB Garamond";
+      }
+
+      .text {
+        font-family: "Poppins";
+      }
+    </style>
+  </head>
+  <body class="text">
+    <header>
+      <nav>
+        <div class="navbar bg-base-100 w-full flex justify-between">
+          <div class="">
+            <a class="btn btn-ghost"
+              ><img src="./images/logo2.png" alt="logo"
+            /></a>
+          </div>
+          <div class="breadcrumbs text-text_color text-base font-normal t">
+            <ul>
+              <li><a class="">Home</a></li>
+              <li><a>Services</a></li>
+              <li><a>Cases</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact Us</a></li>
+              <li></li>
+            </ul>
+          </div>
+          <div>
+            <button class="btn bg-primary hover:bg-primary text-white">Free Consultation</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </body>
+</html>
